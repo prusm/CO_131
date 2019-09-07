@@ -1,0 +1,131 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+/* bigger bold headers on page */
+.bigger {
+    font-size:125%;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-0 {
+    background-image: url('common/images/resources/MAIN.jpg');
+    min-height: 100%;
+}
+
+.bgimg-1 {
+    background-image: url('content/common/images/ONAS.jpg');
+    min-height: 400px;
+}
+
+/* Second image (ONAS) */
+.bgimg-2 {
+    background-image: url('content/common/images/NASZEDOMKI.png');
+    min-height: 400px;
+}
+/* 3rd image (GALERIA) */
+.bgimg-3 {
+    background-image: url('content/common/images/GALERIA.jpg');
+    min-height: 400px;
+}
+
+/* Third image (okolica) */
+.bgimg-4 {
+    background-image: url('content/common/images/OKOLICA.jpg');
+    min-height: 400px;
+}
+
+/* Second image (kontakt) */
+.bgimg-5 {
+    background-image: url('content/common/images/KONTAKT.jpg');
+    min-height: 400px;
+}
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+q
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3, .begin-4, .begin-5 {
+        background-attachment: scroll;
+    }
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+
+#cookieinfo * {
+    margin: 0px;
+    padding: 0px;
+}
+
+#cookieinfo {
+    position: fixed;
+    font-size: 12px;
+    font-family: Arial, Verdana, sans-serif;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background-color: #323334;
+    padding: 20px;
+    box-shadow: 0px -1px 3px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+#cookieinfo h6 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #cdd7da;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 1);
+    margin-bottom: 7px;
+}
+
+#cookieinfo p {
+    font-size: 12px;
+    color: #afb4bc;
+    line-height: 1.5em;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 1);
+}
+
+#cookieinfo a {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 22px;
+    height: 22px;
+    border-radius: 11px;
+    line-height: 22px;
+    font-size: 12px;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    background-color: #ff6000;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+}
+
+#cookieinfo a:hover {
+    background-color: #ff7925;
+}

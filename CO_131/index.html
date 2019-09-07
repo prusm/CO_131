@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html xmlns:o="http://www.w3.org/1999/xhtml">
+<title>Czarna Owca Domki, Kościelisko</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Domki góralskie na wynajem w Kościelisku. Rysulówka 131, Kościelisko 34-511.">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+    <div class="w3-bar" id="myNavbar">
+        <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);"
+           onclick="toggleFunction()" title="Toggle Navigation Menu">
+            <i class="fa fa-bars"></i>
+        </a>
+        <a href="#home" class="w3-bar-item w3-button">HOME</a>
+        <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> O NAS</a>
+        <a href="#houses" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-НАЧАЛО"></i> NASZE DOMKI</a>
+        <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> GALERIA</a>
+        <a href="#around" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-map-signs"></i> OKOLICA</a>
+        <a href="#priceing" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-money"></i> CENNIK</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> KONTAKT</a>
+        <a href="https://www.facebook.com/czarnaowcadomkikoscielisko/" class="w3-bar-item w3-button w3-hide-small"><i
+                class="fa fa-facebook-official w3-hover-opacity>"></i></a>
+        <a href="https://www.instagram.com/czarna.owca.domki.koscielisko/"
+           class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+        <!--        <a href="content/ru/index.html" class="w3-bar-item w3-button w3-hide-small w3-rleft">RU</a>-->
+        <!--        <a href="content/en/index.html" class="w3-bar-item w3-button w3-hide-small w3-rleft">EN</a>-->
+
+
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+        <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">O NAS</a>
+        <a href="#houses" class="w3-bar-item w3-button" onclick="toggleFunction()">NASZE DOMKI</a>
+        <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">GALERIA</a>
+        <a href="#around" class="w3-bar-item w3-button" onclick="toggleFunction()">OKOLICA</a>
+        <a href="#priceing" class="w3-bar-item w3-button" onclick="toggleFunction()">CENNIK</a>
+        <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">KONTAKT</a>
+        <!--        <a href="content/ru/index.html" class="w3-bar-item w3-button" onclick="toggleFunction()">RU</a>-->
+        <!--        <a href="en/index.html" class="w3-bar-item w3-button" onclick="toggleFunction()">EN</a>-->
+
+    </div>
+</div>
+
+<!-- logo image bkg -->
+<div class="bgimg-0 w3-display-container w3-opacity-min w3-padding-large w3-hide-small">
+    <div class="w3-display-middle" style="white-space:nowrap;">
+        <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"> CZARNA <span
+                class="w3-hide-small"> OWCA</span></span>
+        <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"> RYSULÓWKA <span
+                class="w3-hide-small"> 131</span></span>
+        <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"> KOŚCIELISKO </span>
+    </div>
+</div>
+
+
+<!-- First Parallax Image with Logo for Small Devices -->
+<div class="bgimg-0 w3-display-container w3-opacity-min w3-padding-small w3-hide-large">
+    <div class="w3-display-middle" style="white-space:nowrap;">
+        <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"> CZARNA OWCA </span>
+    </div>
+</div>
+
+
+<div>
+</div>
+
+<!-- 1nd Parallax Image with houses Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-black w3-text-white w3-wide"> &nbsp;O NAS&nbsp;</span>
+    </div>
+</div>
+<div class=" w3-content w3-container w3-padding-64" id="about">
+
+    <p>
+        Z miłości i pasji do Podhala i gór
+    </p>
+    <p><b>CZARNA OWCA</b> to zespół <b>3 domków</b> łączących
+        wygodę, nowoczesność i tradycję góralską . W trakcie procesu budowy i
+        urządzania udało się nam stworzyć <b>niezapomniany i wyjątkowy klimat</b> z
+        połączenia stylu zakopiańskiego z prawdziwą góralską architekturą. Nasze domki
+        zlokalizowane są <b>w spokojnej dzielnicy Kościeliska</b> na uroczej Rysulówce,
+        zaledwie <b>6 km</b> do centrum Zakopanego.</p>
+
+    <p>Przy domkach znajduje się <b>prywatny parking</b> dla
+        naszych gości ,zielony <b>ogród</b> ,<b>grill</b> oraz <b>plac zabaw</b> dla
+        dzieci z piaskownicą, huśtawkami i zjeżdżalnią. Z okien naszych góralskich domków
+        rozpościera się wspaniały <b>widok na Czerwone Wierchy</b>. Malownicze widoki
+        na wszystkie górskie szczyty gwarantują niezapomniane wrażenia.</p>
+
+
+    <p><b>CZARNA OWCA</b> to idealne miejsce na wypoczynek.</p>
+
+    <p>Wszędzie stąd blisko, a jednocześnie wystarczająco daleko od
+        zakopiańskiego zgiełku by odpocząć i nabrać sił.</p>
+
+    <p><b>Na życzenie</b> i za dodatkową opłatą organizujemy dla
+        naszych gości wycieczki górskie z przewodnikiem, ogniska, kuligi, urodziny,
+        oraz rocznice wszystko w góralskim stylu z atrakcjami regionalnymi. <b>Pośredniczymy</b>
+        w wynajmie sal i restauracji na imprezy , oraz organizujemy transport lokalny
+        dla większych grup. <b>Posiadamy</b> bazę instruktorów narciarskich,
+        snowboardowych i ostatnio coraz bardziej popularnych skiturów.</p>
+
+</div>
+
+<!-- 2nd Parallax Image with houses Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-black w3-text-white w3-wide">&nbsp;NASZE DOMKI&nbsp;</span>
+    </div>
+</div>
+
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+    <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">3</span><br>
+        Domki
+    </div>
+    <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">18+6(dostawek)</span><br>
+        Łóżek
+    </div>
+    <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">12</span><br>
+        Miesięcy w roku czynne
+    </div>
+    <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">100%</span><br>
+        Zadowolonych klientów
+    </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="houses">
+
+    <p>Domki <b>CZARNA OWCA</b> to wyjątkowe, nowo wybudowane domy
+        w góralskim stylu. Każdy z trzech 80-metrowych domków jest idealny <b>dla dwóch
+            rodzin</b> z czwórką dzieci lub <b>grupy przyjaciół</b>, gdyż dysponujemy <b>8
+            miejscami do spania</b>. Urządzone są w podobnym stylu łącząc wygodę i góralski
+        klimat drewnianej chałupy. <b>Wysoki standard</b>, komfort i przestronność dają
+        poczucie swobody i domowej atmosfery.</p>
+
+    <p>&nbsp;</p>
+
+    <p><b>NA PARTERZE</b> znajduje się:</p>
+
+    <p>w pełni wyposażony <b>aneks kuchenny</b> z:</p>
+
+    <p>- lodówką</p>
+
+    <p>- zmywarką</p>
+
+    <p>- płytą ceramiczną</p>
+
+    <p>- czajnikiem elektrycznym</p>
+
+    <p>- naczyniami</p>
+
+    <p>- sztućcami</p>
+
+    <p>&nbsp;</p>
+
+    <p><b>Salon</b> z 2-osobową rozkładana kanapą</p>
+
+    <p>Łazienka z prysznicem </p>
+
+    <p>TV z telewizją satelitarną (Cyfrowy Polsat)</p>
+
+    <p>Stół jadalniany z krzesłami oraz kącik dla dzieci z tablicą
+        do rysowania, kredą, stolikiem z krzesełkami oraz skrzynia z zabawkami dla najmłodszych
+        naszych gości. </p>
+
+    <p>Z salonu jest wyjście na słoneczny taras z meblami
+        ogrodowymi, grillem i leżakami. </p>
+
+    <p>&nbsp;</p>
+
+    <p><b>NA PIĘTRZE</b> znajduje się :</p>
+
+    <p>łazienka z prysznicem</p>
+
+    <p>1 sypialnia z dwoma łóżkami (do łączenia) i dostawką w
+        postaci dodatkowego łóżka.</p>
+
+    <p>2 sypialnia z dwoma łóżkami (do łączenia) i dostawką w
+        postaci dodatkowego łóżka.</p>
+
+    <p>W obu sypialniach do dyspozycji są regały na ubrania, wieszaki.</p>
+
+    <p>&nbsp;</p>
+
+    <p><b>CO NASI GOŚCIE</b> mają zagwarantowane :</p>
+
+    <p>- pościel</p>
+
+    <p>- ręcznik (mały i duży)</p>
+
+    <p>- bezpłatny dostęp do WiFi dostępny po otrzymaniu hasła</p>
+
+    <p>- bezpłatny parking (dwa miejsca parkingowe na 1 domek)</p>
+
+    <p>- żelazko z deską do prasowania</p>
+
+    <p>- suszarka do włosów</p>
+
+    <p>- suszarka na bieliznę i pranie</p>
+
+    <p>- odkurzacz i artykuły do sprzątania</p>
+
+    <p>- łóżeczko niemowlęce</p>
+
+    <p>- wanienka do kąpieli najmłodszych</p>
+
+    <p>- krzesełko do jedzenia </p>
+
+    <p>Nasze domki są <b>ogrzewane elektrycznie</b> w postaci
+        ogrzewania podłogowego nowej generacji na podczerwień firmy TERMOFOL co pozwala
+        być w pełni ekologicznym i ekonomicznym.</p>
+
+    <p>
+        <b>Wodę</b> czerpiemy z własnego ujęcia z głębokości <b>30
+        metrów</b>.
+    </p>
+
+
+</div>
+
+<!-- 3rd Parallax Image with Galery Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-black w3-text-white w3-wide">&nbsp;GALERIA&nbsp;</span>
+    </div>
+</div>
+
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+    <div id="gallery" style="max-width: 500px;">
+
+        <ul id="lightSlider">
+            <li><img src="content/common/images/resources/1.jpg"/></li>
+            <li><img src="content/common/images/resources/2.jpg"/></li>
+            <li><img src="content/common/images/resources/3.jpg"/></li>
+            <li><img src="content/common/images/resources/4.jpg"/></li>
+            <li><img src="content/common/images/resources/5.jpg"/></li>
+            <li><img src="content/common/images/resources/6.jpg"/></li>
+
+        </ul>
+        <img style="max-width: 100%; height: auto !important;" id="picture" src="content/common/images/resources/1.jpg"/>
+
+    </div>
+
+    <!--    <?php include("gallery.php"); ?>-->
+
+</div>
+
+
+<!-- 5th Parallax Image with around Text -->
+<div class="bgimg-4 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-black w3-text-white w3-wide">&nbsp;OKOLICA&nbsp;</span>
+    </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="around">
+    <p>Domki <b>CZARNA OWCA</b> położone są w unikatowym miejscu
+        Kościeliska.</p>
+
+    <p>Dzielnica<b> RYSULÓWKA</b> znajduje się w <b>cichej</b> i
+        bardzo spokojnej <b>części Podhala</b>. Nie ma u nas hałasu, zgiełku, tłumów
+        turystów a ruch samochodowy jest znikomy. Położenie na wysokości <b>909
+            m.n.p.m.</b> gwarantuje czystość powietrza i zimą jesteśmy wolni od smogu.</p>
+
+    <p><b>Widok</b> z naszych okien jest niepowtarzalny i nie
+        zagrożony.</p>
+
+    <p>Od południa rozciąga się pasmo <b>Czerwonych Wierchów</b> i
+        niesamowity majestatyczny <b>Giewont</b>. Od północy pasmo Gubałówki z
+        zielonymi łąkami, stadami owiec i lasami pełnymi grzybów jesienią.</p>
+
+    <p><b>Bliskość </b>dwóch najpopularniejszych <b>dolin
+        Kościeliskiej i Chochołowskiej</b> daje możliwość rozpoczęcia wycieczek
+        górskich tych krótkich i tych wielogodzinnych już pod domem a powrót też nie
+        będzie problemem ponieważ <b>obok </b>naszych domków <b>CZARNA</b> <b>OWCA </b>znajduje
+        się <b>przystanek komunikacji lokalnej</b>.</p>
+
+
+    <p align=center style='text-align:center'><b><span
+            style='font-size:14.0pt'>ATRAKCJE  W  OKOLICY</span></b></p>
+
+
+    <p><b>ZIMĄ </b></p>
+
+    <p>- narciarstwo zjazdowe:</p>
+
+    <p>    *Polana Szymoszkowa 4 km</p>
+
+    <p>    *Biały Potok 2 km</p>
+
+    <p>    *Witów 5 km</p>
+
+    <p>- narciarstwo biegowe</p>
+
+    <p>    *Chotarz (trasy przygotowane, ratrakowane) z
+        wypożyczalnia nart i butów</p>
+
+    <p>- skutery śnieżne</p>
+
+    <p>    *„Witów Extreme” – wypożyczalnia</p>
+
+    <p>- kuligi i ogniska</p>
+
+    <p><b>LATEM</b></p>
+
+    <p>- termy Chochołowskie – 10 minut jazdy samochodem otwarte
+        latem i zimą</p>
+
+    <p>- quady – wypożyczalnia „Witów Extreme”</p>
+
+    <p>- rowery – wypożyczalnia „u HOLKA” – oferta dla małych i
+        dużych rowerzystów, możliwość rezerwacji sprzętu oraz dowozu na umówione
+        miejsce.</p>
+
+    <p>- trasy rowerowe</p>
+
+    <p>    *Gubałówka - trasa pieszo/rowerowa prze Butorowy Wierch,
+        Prędówkę i Kierpcówkę</p>
+
+    <p>    *asfaltowa trasa (nowa) rowerowa na Dudkówkach do
+        Cichego i Dzianisza</p>
+
+    <p>    *najdłuższa trasa rowerowa na Podhalu w Podczerwonym,
+        łącząca Nowy Targ ze</p>
+
+    <p>      słowacką Trsteną. Trasa biegnie po historycznym
+        nasypie zabytkowej    </p>
+
+    <p>      kolei wiedeńskiej.</p>
+
+    <p>    *szlak Doliną Chochołowską w stronę schroniska</p>
+
+    <p>&nbsp;</p>
+
+    <p><b>INNE ATRAKCJE</b></p>
+
+    <p>*Jazda konna w stajni „KONSUL” – Kościelisko/Kiry</p>
+
+    <p>*Plażowanie w bardzo popularnym miejscu w ROZTOKACH nad
+        rzeką/potokiem Czarny </p>
+
+    <p>   Dunajec oraz strzeżone kąpielisko pod stokiem narciarskim
+        SZYMOSZKOWA.</p>
+
+    <p>&nbsp;</p>
+
+    <p>Jakby tego było mało Podhale oferuje tez atrakcje
+        kulturalno/historyczno/gastronomiczne</p>
+
+    <p><u>MUZEA </u></p>
+
+    <p>*Muzeum Witkiewicza w willi Koliba </p>
+
+    <p>*Muzeum Tatrańskie</p>
+
+    <p>*Muzeum Szymanowskiego w willi Atma</p>
+
+    <p>*Muzeum Przyrodniczne TPN i wiele innych</p>
+
+    <p><u>TEATRY</u></p>
+
+    <p>*Teatr Witkiewicza „Witkacy”</p>
+
+    <p>*NOWOŚĆ Teatr Rozrywki „Szymaszkowa „</p>
+
+    <p><u>KOŚCIOŁY</u></p>
+
+    <p>*Kościół Parafialny w Kościelisku św.Kazimierza Królewicz</p>
+
+    <p>*Sanktuarium M.B.Fatimskiej na Krzeptówkach</p>
+
+    <p>*Kaplica św.Anny na Płazówce (znana z serialu „Szpilki na
+        Giewoncie”)</p>
+
+    <p>*Kaplica pod wezwaniem Nawiedzenia Najświętszej Marii na
+        Prędówce</p>
+
+    <p><u>RESTAURACJE</u></p>
+
+    <p>*„ZIĘBÓWKA”</p>
+
+    <p>*„GAZDÓWKA POD LASEM”</p>
+
+    <p>*„KARCZMA POLANY” ( po rewolucjach M.Gessler)</p>
+
+    <p>*„HARNAŚ”</p>
+
+    <p>*„SAMANTA” cukiernia</p>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="w3-display-container w3-opacity-min">
+    <div class="w3-display-middle w3-grey">
+        <span class="w3-xxlarge w3-text-white w3-wide">&nbsp;CENNIK&nbsp;</span>
+    </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="priceing">
+
+    <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+           style='border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+        <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:20.55pt'>
+            <td width=168 valign=top style='width:125.9pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:20.55pt'>
+                <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+                                                                                style='mso-ansi-language:EN-US'>JESIEŃ 2019<o:p></o:p></span>
+                </p>
+            </td>
+            <td width=161 valign=top style='width:120.5pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:20.55pt'>
+                <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+                                                                                style='mso-ansi-language:EN-US'>od 400 zł / doba<o:p></o:p></span>
+                </p>
+            </td>
+        </tr>
+        <tr style='mso-yfti-irow:1;height:20.85pt'>
+            <td width=168 valign=top style='width:125.9pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:20.85pt'>
+                <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+                                                                                style='mso-ansi-language:EN-US'>ZIMA 2020<o:p></o:p></span>
+                </p>
+            </td>
+            <td width=161 valign=top style='width:120.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:20.85pt'>
+                <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+                                                                                style='mso-ansi-language:EN-US'>od 500 zł / doba<o:p></o:p></span>
+                </p>
+            </td>
+        </tr>
+        <tr style='mso-yfti-irow:2;height:21.1pt'>
+            <td width=168 valign=top style='width:125.9pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:21.1pt'>
+                <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+                                                                                style='mso-ansi-language:EN-US'>WIOSNA 2020<o:p></o:p></span>
+                </p>
+            </td>
+            <td width=161 valign=top style='width:120.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:21.1pt'>
+                <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+                                                                                style='mso-ansi-language:EN-US'>od 400 zł / doba<o:p></o:p></span>
+                </p>
+            </td>
+        </tr>
+        <tr style='mso-yfti-irow:3;height:20.75pt'>
+            <td width=168 valign=top style='width:125.9pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:20.75pt'>
+                <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+                                                                                style='mso-ansi-language:EN-US'>LATO 2020<o:p></o:p></span>
+                </p>
+            </td>
+            <td width=161 valign=top style='width:120.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:20.75pt'>
+                <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+                                                                                style='mso-ansi-language:EN-US'>od 500 zł / doba<o:p></o:p></span>
+                </p>
+            </td>
+        </tr>
+        <tr style='mso-yfti-irow:4;mso-yfti-lastrow:yes'>
+            <td width=329 colspan=2 valign=top style='width:246.4pt;border:none;
+  mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+                <p class=MsoNormal><span lang=EN-US style='font-size:8.0pt;mso-ansi-language:
+  EN-US'>*podane ceny są cenami najniższymi w danym sezonie, w sprawie
+  szczegółowej wyceny prosimy o kontakt telefoniczny.<o:p></o:p></span></p>
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-5 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-black w3-text-white w3-wide">&nbsp;KONTAKT&nbsp;</span>
+    </div>
+</div>
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+    <h3 class="w3-center">JAK NAS ZNALEŹĆ</h3>
+    <div class="w3-row w3-padding-32 w3-section">
+        <div class="w3-col m4 w3-container">
+            <!-- Add Google Maps -->
+            <div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div>
+            <br> Możesz nas znaleźć na:<br>
+            <a href="https://e-nocleg.pl/nocleg,domek,domki,czarna,owca,koscielisko,k,zakopanego.html"
+               title="Domek - domki CZARNA OWCA Kościelisko k/Zakopanego w e-nocleg.pl" target="_blank"><img
+                    src="https://e-nocleg.pl/img/partner/a/200x100/partner-a.png"
+                    alt="Domek - domki CZARNA OWCA Kościelisko k/Zakopanego w e-nocleg.pl" border="0" width="121px"
+                    height="100" style="border: 0; padding: 0; margin: 0;"/></a><a href="https://e-nocleg.pl/"
+                                                                                   title="Noclegi e-nocleg.pl"
+                                                                                   target="_blank"><img
+                src="https://e-nocleg.pl/img/partner/a/200x100/partner-b.png" alt="Noclegi e-nocleg.pl" border="0"
+                width="40px" height="100" style="border: 0; padding: 0; margin: 0;"/></a><a
+                href="https://e-nocleg.pl/noclegi-koscielisko.html" title="Kościelisko noclegi" target="_blank"><img
+                src="https://e-nocleg.pl/img/partner/a/200x100/partner-c.png" alt="Kościelisko noclegi" width="39px"
+                height="100" border="0" style="border: 0; padding: 0; margin: 0;"/></a> <br> <br>
+
+        </div>
+        <div class="w3-col m8 w3-panel">
+            <div class="w3-large w3-margin-bottom">
+                <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> 34-511
+                Kościelisko,
+                Rysulówka 131<br>
+                <br>
+                <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
+
+                Telefon: <br>
+                <div style="padding-left:3em">
+                    <a href="tel:+48 608 104 359">• +48 604 272 342</a><br><a href="tel:+48 604 272 342">• +48 606
+                    104
+                    359</a><br>
+                </div>
+                <br>
+                <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
+                Email:
+                <div style="padding-left:3em">
+                    <a href="mailto:kontakt@czarnaowca131.pl?Subject=Kontakt%20Czarna%20Owca">
+                        kontakt@czarnaowca131.pl</a><br>
+                    <a href="mailto:rezerwacje@czarnaowca131.pl?Subject=Kontakt%20Czarna%20Owca">
+                        rezerwacje@czarnaowca131.pl</a><br>
+                    <br>
+                    Numer konta:
+                    <br>Mariusz Prus <br>
+                    30 8821 0009 0000 0005 9762 0001 <br><br>
+                    Zapłacisz u nas kartą <i class="fa fa-cc-visa"></i> <i class="fa fa-cc-mastercard"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        Kilka zasad: <br>
+        • W domkach jest bezwzględny zakaz palenia papierosów, papierosów typu elektronicznego oraz używania
+        otwartego ognia
+        (świeczek, świec zapachowych, zimnych ogni, zapałek i zapalniczek).<br>
+        • Na tarasie jest absolutny zakaz odpalania i palenia grilla tradycyjnego (na węgiel),gazowego lub
+        elektrycznego.<br>
+        • Zameldowanie od 15:00
+        • Wymeldowanie do 11:00
+    </div>
+</div>
+
+
+<script src="content/common/js/map.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBckRjhBJ3M8u_9nyAriNjQ9zvvViZnfuA&callback=myMap"></script>
+
+<div w3-include-html="content/pl/contact.html"></div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+    <div class="w3-xlarge w3-section"></a>
+
+        <a href="https://www.facebook.com/czarnaowcadomkikoscielisko/">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+
+        <a href="https://www.instagram.com/czarna.owca.domki.koscielisko/">
+            <i class="fa fa-instagram w3-hover-opacity"></i></a>
+
+    </div>
+    Created by: Małgorzata Prus
+    <a href="https://www.linkedin.com/in/małgorzata-prus-351404125/">Contact me by: <i
+            class="fa fa-linkedin"></i></a>
+</footer>
+<script src="content/common/js/cookieInfo.js"></script>
+
+</body>
+</html>
