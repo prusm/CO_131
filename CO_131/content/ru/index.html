@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:o="http://www.w3.org/1999/xhtml">
 <title>Czarna Owca Domki, Kościelisko</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,449 +7,726 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="content/common/static/styles.css">
-
+<head>
+    <link href="styles.css" rel="stylesheet">
+</head>
 <body>
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
-  <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
-    <a href="#Home" class="w3-bar-item w3-button">НАЧАЛО</a>
-    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> О НАС</a>
-    <a href="#houses" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-НАЧАЛО"></i> НАШИ КОТТЕДЖИ</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> ГАЛЕРЕЯ</a>
-    <a href="#around" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-map-signs"></i> МЕСТНОСТЬ</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> КОНТАКТ</a>
-    <a href="https://www.facebook.com/czarnaowcadomkikoscielisko/" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-facebook-official w3-hover-opacity>"></i></a>
-    <a href="https://www.instagram.com/czarna.owca.domki.koscielisko/" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-    <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-rleft"></i>PL</a>
-    <a href="content/en/index.html" class="w3-bar-item w3-button w3-hide-small w3-rleft"></i>RN</a>
+    <div class="w3-bar" id="myNavbar">
+        <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);"
+           onclick="toggleFunction()" title="Toggle Navigation Menu">
+            <i class="fa fa-bars"></i>
+        </a>
+        <a class="w3-bar-item w3-button" href="#home">HOME</a>
+        <a class="w3-bar-item w3-button w3-hide-small" href="#about"><i class="fa fa-user"></i> O NAS</a>
+        <a class="w3-bar-item w3-button w3-hide-small" href="#houses"><i class="fa fa-НАЧАЛО"></i> NASZE DOMKI</a>
+        <a class="w3-bar-item w3-button w3-hide-small" href="#portfolio"><i class="fa fa-th"></i> GALERIA</a>
+        <a class="w3-bar-item w3-button w3-hide-small" href="#around"><i class="fa fa-map-signs"></i> OKOLICA</a>
+        <a class="w3-bar-item w3-button w3-hide-small" href="#priceing"><i class="fa fa-money"></i> CENNIK</a>
+        <a class="w3-bar-item w3-button w3-hide-small" href="#contact"><i class="fa fa-envelope"></i> KONTAKT</a>
+        <a class="w3-bar-item w3-button w3-hide-small" href="https://www.facebook.com/czarnaowcadomkikoscielisko/"><i
+                class="fa fa-facebook-official w3-hover-opacity>"></i></a>
+        <a class="w3-bar-item w3-button w3-hide-small"
+           href="https://www.instagram.com/czarna.owca.domki.koscielisko/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+        <!--        <a href="content/ru/index.html" class="w3-bar-item w3-button w3-hide-small w3-rleft">RU</a>-->
+        <!--        <a href="content/en/index.html" class="w3-bar-item w3-button w3-hide-small w3-rleft">EN</a>-->
 
-  </div>
 
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">О НАС</a>
-    <a href="#houses" class="w3-bar-item w3-button" onclick="toggleFunction()">НАШИ КОТТЕДЖИ</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">ГАЛЕРЕЯ</a>
-    <a href="#around" class="w3-bar-item w3-button" onclick="toggleFunction()">МЕСТНОСТЬ</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">KONTAKT</a>
-    <a href="index.html" class="w3-bar-item w3-button" onclick="toggleFunction()">PL</a>
-    <a href="content/en/index.html" class="w3-bar-item w3-button" onclick="toggleFunction()">RN</a>
-  </div>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium" id="navDemo">
+        <a class="w3-bar-item w3-button" href="#about" onclick="toggleFunction()">O NAS</a>
+        <a class="w3-bar-item w3-button" href="#houses" onclick="toggleFunction()">NASZE DOMKI</a>
+        <a class="w3-bar-item w3-button" href="#portfolio" onclick="toggleFunction()">GALERIA</a>
+        <a class="w3-bar-item w3-button" href="#around" onclick="toggleFunction()">OKOLICA</a>
+        <a class="w3-bar-item w3-button" href="#priceing" onclick="toggleFunction()">CENNIK</a>
+        <a class="w3-bar-item w3-button" href="#contact" onclick="toggleFunction()">KONTAKT</a>
+        <!--        <a href="content/ru/index.html" class="w3-bar-item w3-button" onclick="toggleFunction()">RU</a>-->
+        <!--        <a href="en/index.html" class="w3-bar-item w3-button" onclick="toggleFunction()">EN</a>-->
+
+    </div>
 </div>
 
 <!-- logo image bkg -->
-<div class="bgimg-1 w3-display-container w3-opacity-min w3-padding-large w3-hide-small" id="Home">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-      <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"> CZARNA <span class="w3-hide-small"> OWCA</span></span>
-      <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"> РЫСУЛУВКА <span class="w3-hide-small"> 131</span></span>
-      <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"> КОСЬЦЕЛИСКО </span>
-  </div>
-</div>
-<!-- First Parallax Image with Logo for Small Devices -->
-<div class="bgimg-1 w3-display-container w3-opacity-min w3-padding-small w3-hide-large" id="Home">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-      <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"> CZARNA OWCA </span>
-  </div>
-</div>
-
-<!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">О НАС</h3>
-  <p class="w3-center"><em>Из-за любви к Подгалю и горам</em></p>
-
-  <p><i><b>CZARNA OWCA</b></i> (русск. черная овца) – это 3 коттеджа, сочетающих в себе удобство,
-    современность и традиции горцев. Во время строительства и обустройства нам удалось создать неповторимую и
-    уникальную атмосферу, какую дает сочетание закопянского и регионального архитектурного стиля. Наши коттеджи
-    находятся в спокойной части Косьцелиска в очаровательной Рысулувце, всего лишь в 6 км от центра Закопане (Zakopane).
-  </br>
-
-	Рядом с коттеджами находится частная парковка для наших гостей, зеленый сад, гриль и площадка для детей с песочницей, качелями и горкой. Из окон наших горских коттеджей открывается замечательный вид на Красные Верхи (Czerwone Wierchy). Живописный вид на горные вершины гарантирует неизгладимые впечатления.
-
-
-  </p>
-  <div class="w3-row">
-    <div class="w3-col m6 w3-center w3-padding-large">
-      <p><b><i class="fa fa-tree w3-margin-right"></i>CZARNA OWCA</b></p><br>
-      <img src="onas.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Czarna Owcaa" width="500" height="333">
+<div class="bgimg-0 w3-display-container w3-opacity-min w3-padding-large w3-hide-small" id="home">
+    <div class="w3-display-middle" style="white-space:nowrap;">
+        <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"> CZARNA <span
+                class="w3-hide-small"> OWCA</span></span>
+        <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"> RYSULÓWKA <span
+                class="w3-hide-small"> 131</span></span>
+        <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"> KOŚCIELISKO </span>
     </div>
-
-    <!-- Hide this text on small devices -->
-    <div class="w3-col m6 w3-padding-large">
-      <p>
-
-<b>CZARNA OWCA</b> это идеальное место для отдыха.
-Отсюда везде близко и, одновременно, достаточно далеко до закопянского шума и суеты, что позволяет полностью расслабиться и набраться сил.
-По желанию гостей за дополнительную плату мы организуем походы в горы с гидом-проводником. Помогаем организовать аренду залов и ресторанов для праздников, а также обеспечить местный транспорт для больших групп.
- У нас есть база инструкторов по горнолыжному спорту и сноубордингу, а также все более популярных скитуров.
-    </p>
-      </div>
-  </div>
-
 </div>
 
-<div class="w3-row w3-center w3-dark-grey w3-padding-16">
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">3</span><br>
-    Коттеджа
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">18+6(дополнительных мест)</span><br>
-    Спальных мест
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">12</span><br>
-    Месяцев в году
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">100%</span><br>
-    Довольных клиентов
-  </div>
+
+<!-- First Parallax Image with Logo for Small Devices -->
+<div class="bgimg-0 w3-display-container w3-opacity-min w3-padding-small w3-hide-large">
+    <div class="w3-display-middle" style="white-space:nowrap;">
+        <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"> CZARNA OWCA </span>
+    </div>
+</div>
+
+
+<div>
+</div>
+
+<!-- 1nd Parallax Image with houses Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-black w3-text-white w3-wide"> &nbsp;O NAS&nbsp;</span>
+    </div>
+</div>
+<div class=" w3-content w3-container w3-padding-64" id="about">
+
+    <p>
+        Z miłości i pasji do Podhala i gór
+    </p>
+    <p><b>CZARNA OWCA</b> to zespół <b>3 domków</b> łączących
+        wygodę, nowoczesność i tradycję góralską . W trakcie procesu budowy i
+        urządzania udało się nam stworzyć <b>niezapomniany i wyjątkowy klimat</b> z
+        połączenia stylu zakopiańskiego z prawdziwą góralską architekturą. Nasze domki
+        zlokalizowane są <b>w spokojnej dzielnicy Kościeliska</b> na uroczej Rysulówce,
+        zaledwie <b>6 km</b> do centrum Zakopanego.</p>
+
+    <p>Przy domkach znajduje się <b>prywatny parking</b> dla
+        naszych gości ,zielony <b>ogród</b> ,<b>grill</b> oraz <b>plac zabaw</b> dla
+        dzieci z piaskownicą, huśtawkami i zjeżdżalnią. Z okien naszych góralskich domków
+        rozpościera się wspaniały <b>widok na Czerwone Wierchy</b>. Malownicze widoki
+        na wszystkie górskie szczyty gwarantują niezapomniane wrażenia.</p>
+
+
+    <p><b>CZARNA OWCA</b> to idealne miejsce na wypoczynek.</p>
+
+    <p>Wszędzie stąd blisko, a jednocześnie wystarczająco daleko od
+        zakopiańskiego zgiełku by odpocząć i nabrać sił.</p>
+
+    <p><b>Na życzenie</b> i za dodatkową opłatą organizujemy dla
+        naszych gości wycieczki górskie z przewodnikiem, ogniska, kuligi, urodziny,
+        oraz rocznice wszystko w góralskim stylu z atrakcjami regionalnymi. <b>Pośredniczymy</b>
+        w wynajmie sal i restauracji na imprezy , oraz organizujemy transport lokalny
+        dla większych grup. <b>Posiadamy</b> bazę instruktorów narciarskich,
+        snowboardowych i ostatnio coraz bardziej popularnych skiturów.</p>
+
 </div>
 
 <!-- 2nd Parallax Image with houses Text -->
 <div class="bgimg-2 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">НАШИ КОТТЕДЖИ</span>
-  </div>
+    <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-black w3-text-white w3-wide">&nbsp;NASZE DOMKI&nbsp;</span>
+    </div>
 </div>
+
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+    <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">3</span><br>
+        Domki
+    </div>
+    <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">18+6(dostawek)</span><br>
+        Łóżek
+    </div>
+    <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">12</span><br>
+        Miesięcy w roku czynne
+    </div>
+    <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">100%</span><br>
+        Zadowolonych klientów
+    </div>
+</div>
+
 <div class="w3-content w3-container w3-padding-64" id="houses">
 
-Коттеджи <b>CZARNA OWCA</b> это исключительные, новые коттеджи регионального архитектурного стиля. Каждый из трех 80-метровых коттеджей идеально подходит для двух семей с четырьмя детьми или группы друзей, так как в каждом из них есть 8 спальных мест. Они обустроены в похожем стиле, что позволяет сочетать удобство и комфорт с атмосферой деревянного дома горцев.
-Высокий стандарт, комфорт и удобство обеспечивают чувство свободы и домашнюю атмосферу.
-<br><br>
-<span class="bigger">НА ПЕРВОМ ЭТАЖЕ находятся: </span>
-<br>
-полностью обустроенная совмещенная кухня:<br>
-• холодильник <br>
-• посудомоечная машина <br>
-• керамическая плита <br>
-• электрический чайник<br>
-•посуда <br>
-• столовые приборы <br>
+    <p>Domki <b>CZARNA OWCA</b> to wyjątkowe, nowo wybudowane domy
+        w góralskim stylu. Każdy z trzech 80-metrowych domków jest idealny <b>dla dwóch
+            rodzin</b> z czwórką dzieci lub <b>grupy przyjaciół</b>, gdyż dysponujemy <b>8
+            miejscami do spania</b>. Urządzone są w podobnym stylu łącząc wygodę i góralski
+        klimat drewnianej chałupy. <b>Wysoki standard</b>, komfort i przestronność dają
+        poczucie swobody i domowej atmosfery.</p>
 
-<br>
-<span>
+    <p>&nbsp;</p>
 
-  Салон с двуспальным раскладным диваном.
-  Ванная комната с душевой.
-  Телевизор со спутниковым телевидением («Cyfrowy Polsat»). <br>
-  Стол со стульями и уголок для детей с доской для рисования, мелом, столиком, стульчиками и сундук с игрушками для самых маленьких гостей.<br>
-  Из салона можно выйти на солнечную террасу с садовой мебелью, грилем и шезлонгами. <br>
-</span>
-<br>
-<span>
-  НА ВТОРОМ ЭТАЖЕ находятся: <br>
-• 1 спальня с двумя кроватями (можно соединить в одну) и дополнительным спальным местом на раскладном кресле. <br>
-• 2 спальня с двумя кроватями (можно соединить в одну) и дополнительным спальным местом на дополнительной кровати.<br>
+    <p><b>NA PARTERZE</b> znajduje się:</p>
 
-</span>
-<br>
-В обеих спальнях есть мебель для хранения одежды, вешалки.<br>
-ДЛЯ НАШИХ ГОСТЕЙ гарантируем:<br>
-- постельное белье <br>
-- полотенца (большое и маленькое)<br>
-- бесплатный доступ к WiFi (после получение пароля)<br>
-- бесплатная парковка (два места на 1 коттедж)<br>
-- утюг с гладильной доской <br>
-- фен для волос <br>
-- сушилка для белья <br>
-- пылесос и средства для уборки <br>
-- кроватка для младенцев <br>
-- ванночка для купания малышей <br>
-- стул для кормления детей <br>
-Наши коттеджи имеют электрическую инфракрасную систему напольного отопления нового поколения фирмы TERMOFOL, что позволяет быть экологичным и экономичным.
-Воду мы берем из собственной скважины глубиной 30 метров.
-<br>
-  </p>
+    <p>w pełni wyposażony <b>aneks kuchenny</b> z:</p>
+
+    <p>- lodówką</p>
+
+    <p>- zmywarką</p>
+
+    <p>- płytą ceramiczną</p>
+
+    <p>- czajnikiem elektrycznym</p>
+
+    <p>- naczyniami</p>
+
+    <p>- sztućcami</p>
+
+    <p>&nbsp;</p>
+
+    <p><b>Salon</b> z 2-osobową rozkładana kanapą</p>
+
+    <p>Łazienka z prysznicem </p>
+
+    <p>TV z telewizją satelitarną (Cyfrowy Polsat)</p>
+
+    <p>Stół jadalniany z krzesłami oraz kącik dla dzieci z tablicą
+        do rysowania, kredą, stolikiem z krzesełkami oraz skrzynia z zabawkami dla najmłodszych
+        naszych gości. </p>
+
+    <p>Z salonu jest wyjście na słoneczny taras z meblami
+        ogrodowymi, grillem i leżakami. </p>
+
+    <p>&nbsp;</p>
+
+    <p><b>NA PIĘTRZE</b> znajduje się :</p>
+
+    <p>łazienka z prysznicem</p>
+
+    <p>1 sypialnia z dwoma łóżkami (do łączenia) i dostawką w
+        postaci dodatkowego łóżka.</p>
+
+    <p>2 sypialnia z dwoma łóżkami (do łączenia) i dostawką w
+        postaci dodatkowego łóżka.</p>
+
+    <p>W obu sypialniach do dyspozycji są regały na ubrania, wieszaki.</p>
+
+    <p>&nbsp;</p>
+
+    <p><b>CO NASI GOŚCIE</b> mają zagwarantowane :</p>
+
+    <p>- pościel</p>
+
+    <p>- ręcznik (mały i duży)</p>
+
+    <p>- bezpłatny dostęp do WiFi dostępny po otrzymaniu hasła</p>
+
+    <p>- bezpłatny parking (dwa miejsca parkingowe na 1 domek)</p>
+
+    <p>- żelazko z deską do prasowania</p>
+
+    <p>- suszarka do włosów</p>
+
+    <p>- suszarka na bieliznę i pranie</p>
+
+    <p>- odkurzacz i artykuły do sprzątania</p>
+
+    <p>- łóżeczko niemowlęce</p>
+
+    <p>- wanienka do kąpieli najmłodszych</p>
+
+    <p>- krzesełko do jedzenia </p>
+
+    <p>Nasze domki są <b>ogrzewane elektrycznie</b> w postaci
+        ogrzewania podłogowego nowej generacji na podczerwień firmy TERMOFOL co pozwala
+        być w pełni ekologicznym i ekonomicznym.</p>
+
+    <p>
+        <b>Wodę</b> czerpiemy z własnego ujęcia z głębokości <b>30
+        metrów</b>.
+    </p>
+
+
+</div>
+
+
+<!-- Container (Portfolio Section) -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-black w3-text-white w3-wide">&nbsp;GALERIA&nbsp;</span>
+    </div>
 </div>
 
 
 <!-- 3rd Parallax Image with Galery Text -->
-<div class="bgimg-3 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">ГАЛЕРЕЯ</span>
-  </div>
-</div>
-
-<!-- Container (Portfolio Section) -->
 <div class="w3-content w3-container w3-padding-64" id="portfolio">
 
-<p class="w3-center">
-      <br> Выберите фотографию, чтобы увеличить.</em></p><br>
+    <div class="w3-row-padding w3-center w3-section">
+        <div class="w3-col m3">
+            <img class="w3-hover-opacity"
+                 onclick="onClick(this)" src="content/common/images/resources/1.jpg" style="width:100%">
+        </div>
 
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding w3-center">
-	<!-- Slideshow container -->
-		<div class="slideshow-container">
+        <div class="w3-col m3">
+            <img class="w3-hover-opacity"
+                 onclick="onClick(this)" src="content/common/images/resources/2.jpg" style="width:100%">
+        </div>
 
-      <div class="w3-col m3">
-        <img src="resources/DSC_2538.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Od ulicy">
-      </div>
-
-      <div class="w3-col m3">
-        <img src="2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Lato w kościelisku">
-      </div>
-
-
-    <div class="w3-col m3">
-      <img src="resources/DSC_2414.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Salon">
+        <div class="w3-col m3">
+            <img class="w3-hover-opacity"
+                 onclick="onClick(this)" src="content/common/images/resources/3.jpg" style="width:100%">
+        </div>
+        <div class="w3-col m3">
+            <img class="w3-hover-opacity"
+                 onclick="onClick(this)" src="content/common/images/resources/4.jpg" style="width:100%">
+        </div>
     </div>
 
-    <div class="w3-col m3">
-      <img src="resources/DSC_2420.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Salon">
-    </div>
-  </div>
+    <div class="w3-row-padding w3-center w3-section">
+        <div class="w3-col m3">
+            <img class="w3-hover-opacity"
+                 onclick="onClick(this)" src="content/common/images/resources/10.jpg" style="width:100%">
+        </div>
 
-  <div class="w3-row-padding w3-center w3-section">
-    <div class="w3-col m3">
-      <img src="resources/DSC_2436.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Jadalnia">
+        <div class="w3-col m3">
+            <img class="w3-hover-opacity"
+                 onclick="onClick(this)" src="content/common/images/resources/19.jpg" style="width:100%">
+        </div>
+        <div class="w3-col m3">
+            <img class="w3-hover-opacity"
+                 onclick="onClick(this)" src="content/common/images/resources/21.jpg" style="width:100%">
+        </div>
+        <div class="w3-col m3">
+            <img class="w3-hover-opacity"
+                 onclick="onClick(this)" src="content/common/images/resources/20.jpg" style="width:100%">
+        </div>
     </div>
 
-    <div class="w3-col m3">
-      <img src="resources/DSC_2441.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Kuchnia i jadalnia">
+
+    <div class="w3-row-padding w3-center w3-section">
+        <div class="w3-col m3">
+            <img class="w3-hover-opacity"
+                 onclick="onClick(this)" src="content/common/images/resources/22.jpg" style="width:100%">
+        </div>
+
+        <div class="w3-col m3">
+            <img class="w3-hover-opacity"
+                 onclick="onClick(this)" src="content/common/images/resources/23.jpg" style="width:100%">
+        </div>
+        <div class="w3-col m3">
+            <img class="w3-hover-opacity"
+                 onclick="onClick(this)" src="content/common/images/resources/24.jpg" style="width:100%">
+        </div>
+        <div class="w3-col m3">
+            <img class="w3-hover-opacity"
+                 onclick="onClick(this)" src="content/common/images/resources/22-1.jpg" style="width:100%">
+        </div>
     </div>
 
-    <div class="w3-col m3">
-      <img src="resources/DSC_2445.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Parter">
+
+    <div class="w3-row-padding w3-center w3-section">
+        <div class="w3-col m3">
+            <img class="w3-hover-opacity"
+                 onclick="onClick(this)" src="content/common/images/resources/26.jpg" style="width:100%">
+        </div>
+
+        <div class="w3-col m3">
+            <img class="w3-hover-opacity"
+                 onclick="onClick(this)" src="content/common/images/resources/28-1.jpg" style="width:100%">
+        </div>
+        <div class="w3-col m3">
+            <img class="w3-hover-opacity"
+                 onclick="onClick(this)" src="content/common/images/resources/32.jpg" style="width:100%">
+        </div>
+        <div class="w3-col m3">
+            <img class="w3-hover-opacity"
+                 onclick="onClick(this)" src="content/common/images/resources/42.jpg" style="width:100%">
+        </div>
     </div>
 
-  <div class="w3-col m3">
-    <img src="resources/DSC_2467.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Kuchnia">
-  </div>
+    <div class="w3-row-padding w3-center w3-section">
+        <div class="w3-col m3">
+            <img class="w3-hover-opacity"
+                 onclick="onClick(this)" src="content/common/images/resources/44.jpg" style="width:100%">
+        </div>
+
+        <div class="w3-col m3">
+            <img class="w3-hover-opacity"
+                 onclick="onClick(this)" src="content/common/images/resources/50-2.jpg" style="width:100%">
+        </div>
+        <div class="w3-col m3">
+            <img class="w3-hover-opacity"
+                 onclick="onClick(this)" src="content/common/images/resources/45.jpg" style="width:100%">
+        </div>
+        <div class="w3-col m3">
+            <img class="w3-hover-opacity"
+                 onclick="onClick(this)" src="content/common/images/resources/49.jpg" style="width:100%">
+        </div>
+    </div>
+
+    <div class="w3-row-padding w3-center w3-section">
+        <div class="w3-col m3">
+            <img class="w3-hover-opacity"
+                 onclick="onClick(this)" src="content/common/images/resources/67.jpg" style="width:100%">
+        </div>
+
+        <div class="w3-col m3">
+            <img class="w3-hover-opacity"
+                 onclick="onClick(this)" src="content/common/images/resources/71.jpg" style="width:100%">
+        </div>
+        <div class="w3-col m3">
+            <img class="w3-hover-opacity"
+                 onclick="onClick(this)" src="content/common/images/resources/76.jpg" style="width:100%">
+        </div>
+        <div class="w3-col m3">
+            <img class="w3-hover-opacity"
+                 onclick="onClick(this)" src="content/common/images/resources/57.jpg" style="width:100%">
+        </div>
+    </div>
+
+    <div class="w3-row-padding w3-center w3-section">
+        <div class="w3-col m3">
+            <img class="w3-hover-opacity"
+                 onclick="onClick(this)" src="content/common/images/resources/79.jpg" style="width:100%">
+        </div>
+
+        <div class="w3-col m3">
+            <img class="w3-hover-opacity"
+                 onclick="onClick(this)" src="content/common/images/resources/81.jpg" style="width:100%">
+        </div>
+        <div class="w3-col m3">
+            <img class="w3-hover-opacity"
+                 onclick="onClick(this)" src="content/common/images/resources/73.jpg" style="width:100%">
+        </div>
+        <div class="w3-col m3">
+            <img class="w3-hover-opacity"
+                 onclick="onClick(this)" src="content/common/images/resources/66.jpg" style="width:100%">
+        </div>
+    </div>
+
 </div>
 
-  <div class="w3-row-padding w3-center w3-section">
-      <div class="w3-col m3">
-        <img src="resources/DSC_2452.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Kuchnia">
-      </div>
-
-    <div class="w3-col m3">
-      <img src="resources/DSC_2456.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Łazienka">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="resources/DSC_2461.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Łazienka">
-    </div>
-
-      <div class="w3-col m3">
-        <img src="resources/DSC_2530.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Łazienka na piętrze.">
-      </div>
-
-  </div>
-
-  <div class="w3-row-padding w3-center w3-section">
-      <div class="w3-col m3">
-        <img src="resources/DSC_2477.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Salon">
-      </div>
-
-  <div class="w3-col m3">
-      <img src="resources/DSC_2503.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sypialnia">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="resources/DSC_2511.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sypialnia">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="resources/DSC_2524.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Pokój dwuosobowy">
-    </div>
-  </div>
-
-  <div class="w3-row-padding w3-center w3-section">
-
-  <div class="w3-col m3">
-    <img src="17.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Gorąco zaprazamy wszytskich rowerzystów">
-  </div>
-
-  <div class="w3-col m3">
-    <img src="src/okolica1.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Okolica">
-  </div>
-  <div class="w3-col m3">
-    <img src="src/all.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Domki wieczorem">
-  </div>
-
-  <div class="w3-col m3">
-   <img src="src/all.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Od ogrodu">
-  </div>
 
 <!-- Modal for full size images on click-->
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
-  </div>
+    <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i
+            class="fa fa-remove"></i></span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+        <img class="w3-image" id="img01">
+        <p class="w3-opacity w3-large" id="caption"></p>
+    </div>
 </div>
-</div>
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
+
+
 <!-- 5th Parallax Image with around Text -->
 <div class="bgimg-4 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-white w3-wide">МЕСТНОСТЬ</span>
-  </div>
+    <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-black w3-text-white w3-wide">&nbsp;OKOLICA&nbsp;</span>
+    </div>
 </div>
 
-<div class="w3-content w3-container w3-padding-64" id="around">Коттеджи «CZARNA OWCA» находятся в уникальном месте Косьцелиска.
-Район РЫСУЛУВКА находится в тихой и очень спокойной части Подгаля. У нас нет шума, суеты, толп туристов и почти нулевое движение автомобилей. Наши коттеджи находятся на высоте 909 м н.у.м., что гарантирует кристальный горный воздух, а зимой полное отсутствие смога.<br>
-Widok z naszych okien jest niepowtarzalny i nie zagrożony.<br>
+<div class="w3-content w3-container w3-padding-64" id="around">
+    <p>Domki <b>CZARNA OWCA</b> położone są w unikatowym miejscu
+        Kościeliska.</p>
 
-Вид, открывающийся из наших окон, неповторим.
-С южной стороны тянется цепь Красных Верхов и удивительный, величественный Гевонт (Giewont). С северной стороны – гора Губалувка (Gubałówka) с зелеными горными лугами, отарами овец и грибными лесами.
-<br>
+    <p>Dzielnica<b> RYSULÓWKA</b> znajduje się w <b>cichej</b> i
+        bardzo spokojnej <b>części Podhala</b>. Nie ma u nas hałasu, zgiełku, tłumów
+        turystów a ruch samochodowy jest znikomy. Położenie na wysokości <b>909
+            m.n.p.m.</b> gwarantuje czystość powietrza i zimą jesteśmy wolni od smogu.</p>
 
-Близость двух наиболее популярных долин – Косьцелиской (Dolina Kościeliska) и Хохоловской (Dolina Chochołowska) делает наши коттеджи отличной стартовой точкой для коротких или более длинных прогулок по горам. Возвращение также не составит никакого труда, так как рядом с нашими коттеджами «CZARNA OWCA» находится остановка общественного транспорта.
-<br>
-<div style="text-align: center;">
-  <span class="bigger"><strong>
-ДОСТОПРИМЕЧАТЕЛЬНОСТИ И РАЗВЛЕЧЕНИЯ:</strong></span><br>
+    <p><b>Widok</b> z naszych okien jest niepowtarzalny i nie
+        zagrożony.</p>
+
+    <p>Od południa rozciąga się pasmo <b>Czerwonych Wierchów</b> i
+        niesamowity majestatyczny <b>Giewont</b>. Od północy pasmo Gubałówki z
+        zielonymi łąkami, stadami owiec i lasami pełnymi grzybów jesienią.</p>
+
+    <p><b>Bliskość </b>dwóch najpopularniejszych <b>dolin
+        Kościeliskiej i Chochołowskiej</b> daje możliwość rozpoczęcia wycieczek
+        górskich tych krótkich i tych wielogodzinnych już pod domem a powrót też nie
+        będzie problemem ponieważ <b>obok </b>naszych domków <b>CZARNA</b> <b>OWCA </b>znajduje
+        się <b>przystanek komunikacji lokalnej</b>.</p>
+
+
+    <p align=center style='text-align:center'><b><span
+            style='font-size:14.0pt'>ATRAKCJE  W  OKOLICY</span></b></p>
+
+
+    <p><b>ZIMĄ </b></p>
+
+    <p>- narciarstwo zjazdowe:</p>
+
+    <p>    *Polana Szymoszkowa 4 km</p>
+
+    <p>    *Biały Potok 2 km</p>
+
+    <p>    *Witów 5 km</p>
+
+    <p>- narciarstwo biegowe</p>
+
+    <p>    *Chotarz (trasy przygotowane, ratrakowane) z
+        wypożyczalnia nart i butów</p>
+
+    <p>- skutery śnieżne</p>
+
+    <p>    *„Witów Extreme” – wypożyczalnia</p>
+
+    <p>- kuligi i ogniska</p>
+
+    <p><b>LATEM</b></p>
+
+    <p>- termy Chochołowskie – 10 minut jazdy samochodem otwarte
+        latem i zimą</p>
+
+    <p>- quady – wypożyczalnia „Witów Extreme”</p>
+
+    <p>- rowery – wypożyczalnia „u HOLKA” – oferta dla małych i
+        dużych rowerzystów, możliwość rezerwacji sprzętu oraz dowozu na umówione
+        miejsce.</p>
+
+    <p>- trasy rowerowe</p>
+
+    <p>    *Gubałówka - trasa pieszo/rowerowa prze Butorowy Wierch,
+        Prędówkę i Kierpcówkę</p>
+
+    <p>    *asfaltowa trasa (nowa) rowerowa na Dudkówkach do
+        Cichego i Dzianisza</p>
+
+    <p>    *najdłuższa trasa rowerowa na Podhalu w Podczerwonym,
+        łącząca Nowy Targ ze</p>
+
+    <p>      słowacką Trsteną. Trasa biegnie po historycznym
+        nasypie zabytkowej    </p>
+
+    <p>      kolei wiedeńskiej.</p>
+
+    <p>    *szlak Doliną Chochołowską w stronę schroniska</p>
+
+    <p>&nbsp;</p>
+
+    <p><b>INNE ATRAKCJE</b></p>
+
+    <p>*Jazda konna w stajni „KONSUL” – Kościelisko/Kiry</p>
+
+    <p>*Plażowanie w bardzo popularnym miejscu w ROZTOKACH nad
+        rzeką/potokiem Czarny </p>
+
+    <p>   Dunajec oraz strzeżone kąpielisko pod stokiem narciarskim
+        SZYMOSZKOWA.</p>
+
+    <p>&nbsp;</p>
+
+    <p>Jakby tego było mało Podhale oferuje tez atrakcje
+        kulturalno/historyczno/gastronomiczne</p>
+
+    <p><u>MUZEA </u></p>
+
+    <p>*Muzeum Witkiewicza w willi Koliba </p>
+
+    <p>*Muzeum Tatrańskie</p>
+
+    <p>*Muzeum Szymanowskiego w willi Atma</p>
+
+    <p>*Muzeum Przyrodniczne TPN i wiele innych</p>
+
+    <p><u>TEATRY</u></p>
+
+    <p>*Teatr Witkiewicza „Witkacy”</p>
+
+    <p>*NOWOŚĆ Teatr Rozrywki „Szymaszkowa „</p>
+
+    <p><u>KOŚCIOŁY</u></p>
+
+    <p>*Kościół Parafialny w Kościelisku św.Kazimierza Królewicz</p>
+
+    <p>*Sanktuarium M.B.Fatimskiej na Krzeptówkach</p>
+
+    <p>*Kaplica św.Anny na Płazówce (znana z serialu „Szpilki na
+        Giewoncie”)</p>
+
+    <p>*Kaplica pod wezwaniem Nawiedzenia Najświętszej Marii na
+        Prędówce</p>
+
+    <p><u>RESTAURACJE</u></p>
+
+    <p>*„ZIĘBÓWKA”</p>
+
+    <p>*„GAZDÓWKA POD LASEM”</p>
+
+    <p>*„KARCZMA POLANY” ( po rewolucjach M.Gessler)</p>
+
+    <p>*„HARNAŚ”</p>
+
+    <p>*„SAMANTA” cukiernia</p>
 </div>
 
-  <span class="bigger"><strong>ЗИМА:</strong></span><br><br>
-<span>
-* Поляна Шымошкова (Polana Szymoszkowa) 4 км <br>
-* Бялы Поток (Biały Potok) 2 км<br>
-* Витув (Witów) 5 км <br>
-- трассы для беговых лыж:<br>
-* Хотаж (Chotarz), подготовленные трассы, прокат лыж и ботинок <br>
-- снегоходы <br>
-* прокат «Witów Extreme» <br>
-- катание на санях и костры <br>
-</span>
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="w3-display-container w3-opacity-min">
+    <div class="w3-display-middle w3-grey">
+        <span class="w3-xxlarge w3-text-white w3-wide">&nbsp;CENNIK&nbsp;</span>
+    </div>
+</div>
 
-  <span class="bigger"><strong>ЛЕТО:</strong></span><br><br>
+<div class="w3-content w3-container w3-padding-64" id="priceing">
 
-<span>
-  - Хохоловские термальные источники (Termy Chochołowskie) – 10 минут на автомобиле, работают зимой и летом <br>
-  - квадроциклы – прокат «Witów Extreme» <br>
-  - велосипеды – прокат «u HOLKA» – предложение для маленьких и больших велосипедистов, возможность резервации оборудования и доставки в указанное место <br>
-  - велосипедные трассы:<br>
-      * Губалувка – пешеходный / велосипедный маршрут вдоль Буторового Верха, Прендувки и Керпцувки (Butorowy Wierch, Prędówka, Kierpcówka)<br>
-      * асфальтированная велосипедная трасса (новая) на Дудкувках до Цихого и Дзяниша (Dudkówki, Ciche, Dzianisz)<br>
-      * самая длинная велосипедная трасса на Подгале в Подчервоным (Podczerwony), соединяющая Новы Тарг (Nowy Targ) со словацкой Трстеной (Trstena). Трасса проложена по насыпи исторической венской железной дороги <br>
-      * трасса по Хохоловской Долине в сторону шале. <br>
-<br>
-<span class="bigger">ДРУГИЕ РАЗВЛЕЧЕНИЯ :</span><br>
-* Верховая езда в конюшне «KONSUL» – Косьцелиско / Киры (Kościelisko/Kiry))<br>
-* Пляжный отдых в очень популярном месте в РОЗТОКАХ (Roztoki) у реки Чарны Дунаец (Czarny Dunajec) и охраняемый пляж у горнолыжной трассы ШЫМОШКОВА (Szymoszkowa)<br>
+    <table border=1 cellpadding=0 cellspacing=0 class=MsoTableGrid
+           style='border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+        <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:20.55pt'>
+            <td style='width:125.9pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:20.55pt' valign=top width=168>
+                <p align=center class=MsoNormal style='text-align:center'><span lang=EN-US
+                                                                                style='mso-ansi-language:EN-US'>JESIEŃ 2019<o:p></o:p></span>
+                </p>
+            </td>
+            <td style='width:120.5pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:20.55pt' valign=top width=161>
+                <p align=center class=MsoNormal style='text-align:center'><span lang=EN-US
+                                                                                style='mso-ansi-language:EN-US'>od 400 zł / doba<o:p></o:p></span>
+                </p>
+            </td>
+        </tr>
+        <tr style='mso-yfti-irow:1;height:20.85pt'>
+            <td style='width:125.9pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:20.85pt' valign=top width=168>
+                <p align=center class=MsoNormal style='text-align:center'><span lang=EN-US
+                                                                                style='mso-ansi-language:EN-US'>ZIMA 2020<o:p></o:p></span>
+                </p>
+            </td>
+            <td style='width:120.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:20.85pt' valign=top width=161>
+                <p align=center class=MsoNormal style='text-align:center'><span lang=EN-US
+                                                                                style='mso-ansi-language:EN-US'>od 500 zł / doba<o:p></o:p></span>
+                </p>
+            </td>
+        </tr>
+        <tr style='mso-yfti-irow:2;height:21.1pt'>
+            <td style='width:125.9pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:21.1pt' valign=top width=168>
+                <p align=center class=MsoNormal style='text-align:center'><span lang=EN-US
+                                                                                style='mso-ansi-language:EN-US'>WIOSNA 2020<o:p></o:p></span>
+                </p>
+            </td>
+            <td style='width:120.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:21.1pt' valign=top width=161>
+                <p align=center class=MsoNormal style='text-align:center'><span lang=EN-US
+                                                                                style='mso-ansi-language:EN-US'>od 400 zł / doba<o:p></o:p></span>
+                </p>
+            </td>
+        </tr>
+        <tr style='mso-yfti-irow:3;height:20.75pt'>
+            <td style='width:125.9pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:20.75pt' valign=top width=168>
+                <p align=center class=MsoNormal style='text-align:center'><span lang=EN-US
+                                                                                style='mso-ansi-language:EN-US'>LATO 2020<o:p></o:p></span>
+                </p>
+            </td>
+            <td style='width:120.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:20.75pt' valign=top width=161>
+                <p align=center class=MsoNormal style='text-align:center'><span lang=EN-US
+                                                                                style='mso-ansi-language:EN-US'>od 500 zł / doba<o:p></o:p></span>
+                </p>
+            </td>
+        </tr>
+        <tr style='mso-yfti-irow:4;mso-yfti-lastrow:yes'>
+            <td colspan=2 style='width:246.4pt;border:none;
+  mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt' valign=top width=329>
+                <p class=MsoNormal><span lang=EN-US style='font-size:8.0pt;mso-ansi-language:
+  EN-US'>*podane ceny są cenami najniższymi w danym sezonie, w sprawie
+  szczegółowej wyceny prosimy o kontakt telefoniczny.<o:p></o:p></span></p>
+            </td>
+        </tr>
+    </table>
+</div>
 
-Кроме того, Подгале предлагает также культурные, исторические и гастрономические развлечения.
-МУЗЕИ <br>
-* Музей Виткевича в вилле Колиба <br>
-* Музей Татр <br>
-* Музей Шымановского в вилле Атма <br>
-* Природный музей Татранского национального парка и многое другое <br>
-ТЕАТРЫ <br>
-* Театр им. Виткевича «Виткацы» <br>
-* НОВИНКА Театр Развлечений «Шымашкова» <br>
-КОСТЕЛЫ <br>
-* Приходской костел св. Казимира Королевича в Косьцелиске <br>
-* Святилище Богоматери Фатимы на Кшептувках (Krzeptówki) <br>
-* Часовня св. Анны в Плазувке (Płazówka), известная по сериалу «Шпильки на Гевонте» <br>
-* Часовня Посещения Пресвятой Богородицы в Прендувке (Prędówka) <br>
-РЕСТОРАНЫ <br>
-* ZIĘBÓWKA <br>
-* GAZDÓWKA POD LASEM<br>
-* KARCZMA POLANY (после гатрономической революции Магды Гесслер) <br>
-* HARNAŚ <br>
-* SAMANTA, кондитерская <br>
 
 <!-- Third Parallax Image with Portfolio Text -->
 <div class="bgimg-5 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-white w3-wide">КОНТАКТ</span>
-  </div>
+    <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-black w3-text-white w3-wide">&nbsp;KONTAKT&nbsp;</span>
+    </div>
 </div>
-
 <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">Как нас найти </h3>
+    <h3 class="w3-center">JAK NAS ZNALEŹĆ</h3>
+    <div class="w3-row w3-padding-32 w3-section">
+        <div class="w3-col m4 w3-container">
+            <!-- Add Google Maps -->
+            <div class="w3-round-large w3-greyscale" id="googleMap" style="width:100%;height:400px;"></div>
+            <br> Możesz nas znaleźć na:<br>
+            <a href="https://e-nocleg.pl/nocleg,domek,domki,czarna,owca,koscielisko,k,zakopanego.html"
+               target="_blank" title="Domek - domki CZARNA OWCA Kościelisko k/Zakopanego w e-nocleg.pl"><img
+                    alt="Domek - domki CZARNA OWCA Kościelisko k/Zakopanego w e-nocleg.pl"
+                    border="0" height="100" src="https://e-nocleg.pl/img/partner/a/200x100/partner-a.png"
+                    style="border: 0; padding: 0; margin: 0;" width="121px"/></a><a href="https://e-nocleg.pl/"
+                                                                                   target="_blank"
+                                                                                   title="Noclegi e-nocleg.pl"><img
+                alt="Noclegi e-nocleg.pl" border="0" height="100"
+                src="https://e-nocleg.pl/img/partner/a/200x100/partner-b.png" style="border: 0; padding: 0; margin: 0;" width="40px"/></a><a
+                href="https://e-nocleg.pl/noclegi-koscielisko.html" target="_blank" title="Kościelisko noclegi"><img
+                alt="Kościelisko noclegi" border="0" height="100"
+                src="https://e-nocleg.pl/img/partner/a/200x100/partner-c.png" style="border: 0; padding: 0; margin: 0;" width="39px"/></a> <br> <br>
+
+        </div>
+        <div class="w3-col m8 w3-panel">
+            <div class="w3-large w3-margin-bottom">
+                <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> 34-511
+                Kościelisko,
+                Rysulówka 131<br>
+                <br>
+                <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
+
+                Telefon: <br>
+                <div style="padding-left:3em">
+                    <a href="tel:+48 608 104 359">• +48 604 272 342</a><br><a href="tel:+48 604 272 342">• +48 606
+                    104
+                    359</a><br>
+                </div>
+                <br>
+                <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
+                Email:
+                <div style="padding-left:3em">
+                    <a href="mailto:kontakt@czarnaowca131.pl?Subject=Kontakt%20Czarna%20Owca">
+                        kontakt@czarnaowca131.pl</a><br>
+                    <a href="mailto:rezerwacje@czarnaowca131.pl?Subject=Kontakt%20Czarna%20Owca">
+                        rezerwacje@czarnaowca131.pl</a><br>
+                    <br>
+                    Numer konta:
+                    <br>Mariusz Prus <br>
+                    30 8821 0009 0000 0005 9762 0001 <br><br>
+                    Zapłacisz u nas kartą <i class="fa fa-cc-visa"></i> <i class="fa fa-cc-mastercard"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        Kilka zasad: <br>
+        • W domkach jest bezwzględny zakaz palenia papierosów, papierosów typu elektronicznego oraz używania
+        otwartego ognia
+        (świeczek, świec zapachowych, zimnych ogni, zapałek i zapalniczek).<br>
+        • Na tarasie jest absolutny zakaz odpalania i palenia grilla tradycyjnego (na węgiel),gazowego lub
+        elektrycznego.<br>
+        • Zameldowanie od 15:00
+        • Wymeldowanie do 11:00
+    </div>
 </div>
-  <div class="w3-row w3-padding-32 w3-section">
-    <div class="w3-col m4 w3-container">
-      <!-- Add Google Maps -->
-      <div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div>
-      <br> Нас можете найти::<br>
-      <a href="https://e-nocleg.pl/nocleg,domek,domki,czarna,owca,koscielisko,k,zakopanego.html" title="Domek - domki CZARNA OWCA Kościelisko k/Zakopanego w e-nocleg.pl" target="_blank"><img src="https://e-nocleg.pl/img/partner/a/200x100/partner-a.png" alt="Domek - domki CZARNA OWCA Kościelisko k/Zakopanego w e-nocleg.pl" border="0" width="121px" height="100" style="border: 0; padding: 0; margin: 0;" /></a><a href="https://e-nocleg.pl/" title="Noclegi e-nocleg.pl" target="_blank"><img src="https://e-nocleg.pl/img/partner/a/200x100/partner-b.png" alt="Noclegi e-nocleg.pl" border="0" width="40px" height="100" style="border: 0; padding: 0; margin: 0;" /></a><a href="https://e-nocleg.pl/noclegi-koscielisko.html" title="Kościelisko noclegi" target="_blank"><img src="https://e-nocleg.pl/img/partner/a/200x100/partner-c.png" alt="Kościelisko noclegi" width="39px" height="100" border="0" style="border: 0; padding: 0; margin: 0;" /></a> <br> <br>
-	   <div>
-    	<a href='https://www.nocowanie.pl/noclegi/koscielisko/domki/198733/' rel='nofollow' target='_blank' title='noclegi'><img src='//d.nocimg.pl/gfx/nocowanie_pl/partnerzy/v4/10_1_baner_01.png' border='0' alt='noclegi' width='160' height='70' /></a>
-    </div>
-    </div>
-    <div class="w3-col m8 w3-panel">
-      <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> 34-511 Kościelisko, Rysulówka 131, Polska<br>
-        <br>
-        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
 
-      Телефон: <br>
-		<div style = "padding-left:3em">
-		<a href="tel:+48 608 104 359">• +48 604 272 342</a><br><a href="tel:+48 604 272 342">• +48 606 104 359<br></div>
-		<br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
-		Адрес эл. почты::
-		<div style = "padding-left:3em">
-		<a href="mailto:kontakt@czarnaowca131.pl?Subject=Kontakt%20Czarna%20Owca">
-		kontakt@czarnaowca131.pl</a><br>
-		<a href="mailto:rezerwacje@czarnaowca131.pl?Subject=Kontakt%20Czarna%20Owca">
-		rezerwacje@czarnaowca131.pl</a><br>
-		<br>
 
-    Номер банковского счета:
-		<br>Mariusz Prus <br>
-		30 8821 0009 0000 0005 9762 0001 <br><br>
-    У нас можно платить картой [Visa и Mastercard]<i class="fa fa-cc-visa"></i>  <i class="fa fa-cc-mastercard"></i>
-		</div>
-	  </div>
-    </div>
-  </div>
-НЕСКОЛЬКО ПРАВИЛ: <br>
-
-В коттеджах абсолютно запрещено курение (в том числе электронных сигарет) и использование открытого огня (свечей, аромасвечей, бенгальских огней, спичек, зажигалок, фейерверков, петард и т.п.). <br>
-На террасе абсолютно запрещено использовать и разжигать традиционный (на углях), газовый или электрический гриль.<br>
-Время заезда 15.00 ч.<br>
-Время выезда 11.00 ч. <br>
-</div>
+<script src="content/common/js/map.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBckRjhBJ3M8u_9nyAriNjQ9zvvViZnfuA&callback=myMap"></script>
 
 <!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-  <div class="w3-xlarge w3-section"></a>
+<footer class="w3-center w3-black w3-padding-64 w3-opacity">
+    <div class="w3-xlarge w3-section">
 
-    <a href="https://www.facebook.com/czarnaowcadomkikoscielisko/">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+        <a href="https://www.facebook.com/czarnaowcadomkikoscielisko/">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
 
-    <a href="https://www.instagram.com/czarna.owca.domki.koscielisko/">
-    <i class="fa fa-instagram w3-hover-opacity"></i></a>
+        <a href="https://www.instagram.com/czarna.owca.domki.koscielisko/">
+            <i class="fa fa-instagram w3-hover-opacity"></i></a>
 
-</div>
-Created by: Małgorzata Prus
-<a href="https://www.linkedin.com/in/małgorzata-prus-351404125/">Contact me by: <i class="fa fa-linkedin"></i></a>
+    </div>
+    Created by: Małgorzata Prus
+    <a href="https://www.linkedin.com/in/małgorzata-prus-351404125/">Contact me by: <i
+            class="fa fa-linkedin"></i></a>
 </footer>
 
-<!-- Add Google Maps -->
+
 <script>
-function myMap()
-{
-  myCenter=new google.maps.LatLng(49.2923572, 19.867538500000023);
-  var mapOptions= {
-    center:myCenter,
-    zoom:12, scrollwheel: false, draggable: false,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
-
-  var marker = new google.maps.Marker({
-    position: myCenter,
-  });
-  marker.setMap(map);
-}
-
 // Modal Image Gallery
 function onClick(element) {
   document.getElementById("img01").src = element.src;
@@ -478,10 +755,8 @@ function toggleFunction() {
         x.className = x.className.replace(" w3-show", "");
     }
 }
+
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBckRjhBJ3M8u_9nyAriNjQ9zvvViZnfuA&callback=myMap"></script>
-
-
-
+<script src="content/common/js/cookieInfo.js"></script>
 </body>
 </html>
