@@ -26,6 +26,7 @@
         <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> GALERIA</a>
         <a href="#around" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-map-signs"></i> OKOLICA</a>
         <a href="#priceing" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-money"></i> CENNIK</a>
+        <a href="#booking" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-bed"></i> REZERWACJE</a>
         <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> KONTAKT</a>
 
         <a href="https://www.facebook.com/czarnaowcadomkikoscielisko/" class="w3-bar-item w3-button w3-hide-small"><i
@@ -43,6 +44,7 @@
         <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">GALERIA</a>
         <a href="#around" class="w3-bar-item w3-button" onclick="toggleFunction()">OKOLICA</a>
         <a href="#priceing" class="w3-bar-item w3-button" onclick="toggleFunction()">CENNIK</a>
+        <a href="#booking" class="w3-bar-item w3-button" onclick="toggleFunction()">REZERWACJE</a>
         <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">KONTAKT</a>
         <!--        <a href="content/ru/index.html" class="w3-bar-item w3-button" onclick="toggleFunction()">RU</a>-->
         <!--        <a href="en/index.html" class="w3-bar-item w3-button" onclick="toggleFunction()">EN</a>-->
@@ -533,6 +535,7 @@
 
     <div class="w3-content w3-container w3-padding-64" id="priceing">
 
+
         <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
                style='border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
  mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
@@ -628,9 +631,34 @@
             </tr>
         </table>
     </div>
+        <!-- Third Parallax Image with Portfolio Text -->
+        <div class="w3-display-container w3-opacity-min">
+            <div class="w3-display-middle w3-grey">
+                <span class="w3-xxlarge w3-text-white w3-wide">&nbsp;REZERWACJE&nbsp;</span>
+            </div>
+        </div>
+        <div class="w3-content w3-container w3-padding-64" id="booking">
+                <iframe id="ra-reservation-form-v2" style="width: 100%; height:100px; border: none; padding: 0;"
+                        src="https://roomadmin.pl/widget/reservation-v2/start?fh=aa7b37d38423a57ef017159b6a096c2f9f99f99f&style=%7B%22color_accent%22%3A%22%23A1195B%22%2C%22color_bg%22%3A%22%23FFFFFF%22%7D&"></iframe>
+                <script>
+             try { (function () { var iframe = window.document.getElementById('ra-reservation-form-v2');
+            function raMessageReceiver(event) { if (iframe) { if(!event.data.sender ||
+            "reservation-form" !== event.data.sender){ return; } if (event.data.height)
+             { iframe.style.height = (event.data.height + 10) + "px"; } if
+              (event.data.event && event.data.event.name === "widget.scrollup.requested")
+              { try { iframe.scrollIntoView({behavior: "smooth", block: "start"}); } catch(e) {} } } }
+               window.addEventListener("message", raMessageReceiver, false); function setup()
+                { try { iframe.contentWindow.postMessage({ location: window.location.toString(),
+                setup: { autoHeight: true } }, "*"); } catch (e) { } } setInterval(setup, 1000);
+                iframe.addEventListener("load", setup); })(); } catch (e) { console.error(e); }
+            </script>
+            <div style="text-align: center">
+            <a href="REGULAMIN.pdf">Przed rezerwacją zapoznaj się z regulaminem rezerwacji</a>
 
+            </div>
+        </div>
 
-    <!-- Third Parallax Image with Portfolio Text -->
+        <!-- Third Parallax Image with Portfolio Text -->
     <div class="bgimg-5 w3-display-container w3-opacity-min">
         <div class="w3-display-middle">
             <span class="w3-xxlarge w3-black w3-text-white w3-wide">&nbsp;KONTAKT&nbsp;</span>
